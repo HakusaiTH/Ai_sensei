@@ -8,7 +8,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-openai.api_key = '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'
+openai.api_key = 'openai-key'
 
 def cut_kanji(text):
     kanji = re.findall(r'[一-龯]', text)
@@ -84,7 +84,7 @@ def genarate():
 
     url = "https://api.aiforthai.in.th/ssense"    
     params = {'text':response_text}
-    headers = {'Apikey': "If66yNxYjCF1T5XtBgQ3k9VczUbHJn51"}
+    headers = {'Apikey': "api.aiforthai"}
     response = requests.get(url, headers=headers, params=params).json()
     polarity_score = response['sentiment']['polarity']
 
