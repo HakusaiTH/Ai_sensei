@@ -1,0 +1,233 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    padding: 10px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.chat div {
+    margin: 10px;
+    padding: 10px;
+    height: 250px;
+    background-color: red;
+    border: 3px solid black;
+}
+
+.img {
+    width: 20%;
+    text-align: center;
+}
+
+.img img {
+    width: 80%;
+    height: 250px;
+}
+
+.box {
+    width: 80%;
+    padding: 20px;
+}
+
+.in {
+    display: flex;
+    flex-direction: row;
+}
+
+.in_out_box {
+    width: 50%;
+}
+
+.head_box {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+.head_box h2 {
+    margin: 0px;
+}
+
+.in_user, .tran_out {
+    margin: 10px;
+    padding: 10px;
+    height: 350px;
+    background-color: green;
+}
+
+.in_user textarea {
+    width: 90%;
+    height: 340px;
+    font-size: 25px;
+    resize: none;
+}
+
+.btn button {
+    width: 10%;
+    padding: 10px 5px;
+}
+
+.btn button h2 {
+    margin: 0px;
+}
+
+.out {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.in_out_box {
+    margin: 20px 0px;
+}
+
+.in_out_box ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.in_out_box li {
+    padding: 20px;
+    text-align: center;
+}
+
+.in_out_box li a {
+    font-size: 30px;
+}
+
+.box {
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+}
+
+.tran_out {
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+
+.data_box {
+    background-color: rgb(249, 255, 213);
+    border: 3px solid black;
+    padding: 10px;
+    height: 250px;
+    width: 50%;
+
+    position: absolute;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%)
+}
+
+.item {
+    width: 30%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.data {
+    margin-left: 10px;
+    width: 40%;
+}
+
+.data h2,h3 {
+    margin: 0px;
+}
+
+.data h2 {
+    font-size: 40px;
+}
+
+.data h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.word, .kanji {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.close {
+    background-color: red;
+    padding: 3px 10px;
+    color: white;
+    width: fit-content;
+
+    position: absolute;
+    position: fixed;
+    top:-10px;
+    right: 3px;
+}
+
+.close h1 {
+    margin: 0px;
+}
+
+.kun_on, .kun,.on {
+    display: flex;
+    flex-direction: row;
+}
+
+.kun_on_box {
+    background-color: red;
+    padding: 3px 5px;
+    color: white;
+    margin-right: 10px;
+}
+
+.kun_on_box h3 {
+    margin: 0px;
+}
+
+.kun {
+    margin-right: 20px;
+}
+
+.box_data {
+    margin: 10px;
+    width: 700px;
+    height: 100px;
+    overflow: auto;
+}
+
+.item img {
+    width: 80%;
+    height: 90%;
+}
+
+.item {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.data {
+    width: 70%;
+}
+
+.data h4 {
+    font-size: 23px;
+}
+
+.data_box {
+    display: none;
+}
+
+.word, .kanji{
+    display: none;
+}

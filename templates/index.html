@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ai sensei</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat">
+        <div class="img"><img  id="sen_img" src="/static/image/n.png" alt=""></div>
+        <div class="box"><h2 id="ai_chat"></h2></div>
+      </div>
+      <div class="in">
+        <div class="in_out_box">
+          <div class="head_box"><h2>input</h2></div>
+          <div class="in_user">
+            <form action="">
+              <textarea type="text" id="data" name="data"></textarea>
+            </form>
+          </div>
+        </div>
+        <div class="in_out_box">
+          <div class="head_box"><h2>output</h2></div>
+          <div class="tran_out">
+            <h2 id="result" name="result"></h2>
+          </div>
+        </div>
+      </div>
+      <div class="btn"><button type="submit" id="submitBtn" class="btn" ><h2>Submit</h2></button></div>
+
+      <div class="out">
+        <div class="in_out_box">
+          <div class="head_box"><h2>kanji</h2></div>
+          <ul id="kanjiList"><li></li></ul>
+        </div>
+
+        <div class="in_out_box">
+          <div class="head_box"><h2>word</h2></div>
+          <ul id="wordList"></ul>
+        </div>
+      </div>
+
+      <div class="data_box" id="data_box" >
+        
+        <div class="word" id="word" >
+          <div class="item"><h2 id="word_text" ></h2></div>
+          <div class="data">
+            <h2 id="word_tran" ></h2>
+            <h3 id="word_example" ></h3>
+            <h4 id="word_example_tran" ></h4>
+          </div>
+        </div>
+        
+
+        <div class="kanji" id="kanji" >
+          <div class="item">
+            <img id="kanji_img" alt="Otozureru Kanji Stroke Diagram">
+          </div>
+          <div class="data">
+            <h2 id="kanji_text" ></h2>
+            <div class="kun_on">
+              <div class="kun">
+                <h3 class="kun_on_box" >kun</h3>
+                <h3 id="kun" ></h3>
+              </div>
+              <div class="on">
+                <h3 class="kun_on_box" >on</h3>
+                <h3 id="on" ></h3>
+              </div>
+            </div>
+            <div class="box_data">
+              <h3 id="kanji_example" ></h3>
+            </div>
+          </div>
+        </div>
+
+        <div  id="close" class="close"><h1>x</h1></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
