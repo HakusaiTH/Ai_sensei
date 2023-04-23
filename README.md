@@ -1,3 +1,6 @@
+![ai-sensei](https://user-images.githubusercontent.com/104154862/233820014-0c430dcf-ee58-4b0e-a18c-a568af730e12.jpg)
+s.githubusercontent.com/104154862/227754918-82f156f3-e479-4feb-9260-708d62599ee9.jpg)
+
 # Ai sensei เว็บแอปพลิเคชันช่วยสำหรับเรียนภาษาญี่ปุ่น
 
 นี่คือเว็บแอปพลิเคชันที่ใช้ Flask ซึ่งใช้ OpenAI, MeCab, Googletrans และ Jisho API เพื่อสร้างแพลตฟอร์มการเรียนรู้ภาษาญี่ปุ่น ด้วย chat gpt
